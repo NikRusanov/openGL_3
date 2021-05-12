@@ -1,4 +1,4 @@
-/home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/opengl/opengl_lab3
+/home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nik/files/files/Study/opengl_3/openGL_3
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/opengl/opengl_lab3/cmake-build-debug
+-- Build files have been written to: /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug

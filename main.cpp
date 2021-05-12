@@ -1,3 +1,5 @@
+
+
 #include <GL/glut.h>
 #include "src/icosahedron.h"
 
@@ -18,10 +20,9 @@ GLfloat global_ambient[]    = { 0.0f, 0.0f, 0.0f, 1.0f };
 
 GLfloat light_ambient[]	    = { 0.5f, 0.5f, 0.5f, 1.0f };
 GLfloat light_diffuse[]	    = { 0.5f, 0.5f, 0.5f, 0.1f };
-GLfloat light_specular[]    = { 0.0f, 0.0f, 0.0f, 0.1f };
+
 GLfloat light_position[]    = { 1.0, 1.0, 3.0 };
-//GLfloat light_direction[]   = { 5.0, 1.0, 1.0 };
-GLfloat light_direction[]   = { 5.0, 1.0, 10.0 };
+
 
 const GLfloat mat_ambient[] =   { 0.2215,  0.3745,   0.2215 };
 const GLfloat mat_diffuse[] =   { 0.17568, 0.61424,  0.17568 };
@@ -107,10 +108,10 @@ static void resize(int width, int height)
     glLoadIdentity();
 }
 
-// Draw field 
+// Draw field
 void drawPlane(void) {
 //    glDisable(GL_COLOR_MATERIAL);
-    glColor3f(0.5, 0.5, 0.5);
+    glColor3f(0, 1, 0.5);
 
 //    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, mat_ambient);
 //    glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, mat_diffuse);
@@ -147,8 +148,8 @@ static void display(void)
     glColor3f(1, 0, 0);
     glTranslatef(0.0, 0.0, -1.0);
 
-//    glutSolidSphere(1,25,25);
-    //glTranslatef(0.3, 0.8, 1.48);
+    glutSolidSphere(1,25,25);
+    glTranslatef(0.3, 0.8, 0.0);
 
     icosadreon.Draw();
 
@@ -162,7 +163,7 @@ int main(int argc, char *argv[])
     glutInitWindowPosition(250, 0);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH | GLUT_ALPHA);
 
-    glutCreateWindow("tomilin course work");
+    glutCreateWindow("open gl");
 
     glutReshapeFunc(resize);
     glutDisplayFunc(display);
@@ -178,17 +179,13 @@ int main(int argc, char *argv[])
     glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
     glLightModeli(GL_LIGHT_MODEL_TWO_SIDE, GL_TRUE);
 
-    if (LoadTexture((char *)"./sbob.bmp") != 1)
+    if (LoadTexture((char *)"../1.bmp") != 1)
         printf("ERROR WITH LOAD A TEXTURE\n");
 
     glEnable(GL_LIGHT0);
     glEnable(GL_LIGHTING);
 
-//    glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
-//    glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
-//    glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
-//    glLightfv(GL_LIGHT0, GL_SPOT_DIRECTION, light_direction);
-//    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+
 
     glutMainLoop();
 

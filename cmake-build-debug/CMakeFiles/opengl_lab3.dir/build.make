@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/opengl/opengl_lab3
+CMAKE_SOURCE_DIR = /home/nik/files/files/Study/opengl_3/openGL_3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/opengl/opengl_lab3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/opengl_lab3.dir/depend.make
@@ -79,62 +79,48 @@ include CMakeFiles/opengl_lab3.dir/flags.make
 
 CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o: CMakeFiles/opengl_lab3.dir/flags.make
 CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o: ../src/icosahedron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o -c /tmp/opengl/opengl_lab3/src/icosahedron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o -c /home/nik/files/files/Study/opengl_3/openGL_3/src/icosahedron.cpp
 
 CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/opengl/opengl_lab3/src/icosahedron.cpp > CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nik/files/files/Study/opengl_3/openGL_3/src/icosahedron.cpp > CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.i
 
 CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/opengl/opengl_lab3/src/icosahedron.cpp -o CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nik/files/files/Study/opengl_3/openGL_3/src/icosahedron.cpp -o CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.s
 
 CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o: CMakeFiles/opengl_lab3.dir/flags.make
 CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o: ../src/Utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o -c /tmp/opengl/opengl_lab3/src/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o -c /home/nik/files/files/Study/opengl_3/openGL_3/src/Utils.cpp
 
 CMakeFiles/opengl_lab3.dir/src/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_lab3.dir/src/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/opengl/opengl_lab3/src/Utils.cpp > CMakeFiles/opengl_lab3.dir/src/Utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nik/files/files/Study/opengl_3/openGL_3/src/Utils.cpp > CMakeFiles/opengl_lab3.dir/src/Utils.cpp.i
 
 CMakeFiles/opengl_lab3.dir/src/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_lab3.dir/src/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/opengl/opengl_lab3/src/Utils.cpp -o CMakeFiles/opengl_lab3.dir/src/Utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nik/files/files/Study/opengl_3/openGL_3/src/Utils.cpp -o CMakeFiles/opengl_lab3.dir/src/Utils.cpp.s
 
 CMakeFiles/opengl_lab3.dir/main.cpp.o: CMakeFiles/opengl_lab3.dir/flags.make
 CMakeFiles/opengl_lab3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_lab3.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/main.cpp.o -c /tmp/opengl/opengl_lab3/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/opengl_lab3.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/main.cpp.o -c /home/nik/files/files/Study/opengl_3/openGL_3/main.cpp
 
 CMakeFiles/opengl_lab3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_lab3.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/opengl/opengl_lab3/main.cpp > CMakeFiles/opengl_lab3.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nik/files/files/Study/opengl_3/openGL_3/main.cpp > CMakeFiles/opengl_lab3.dir/main.cpp.i
 
 CMakeFiles/opengl_lab3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_lab3.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/opengl/opengl_lab3/main.cpp -o CMakeFiles/opengl_lab3.dir/main.cpp.s
-
-CMakeFiles/opengl_lab3.dir/src/main2.cpp.o: CMakeFiles/opengl_lab3.dir/flags.make
-CMakeFiles/opengl_lab3.dir/src/main2.cpp.o: ../src/main2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/opengl_lab3.dir/src/main2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/opengl_lab3.dir/src/main2.cpp.o -c /tmp/opengl/opengl_lab3/src/main2.cpp
-
-CMakeFiles/opengl_lab3.dir/src/main2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opengl_lab3.dir/src/main2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /tmp/opengl/opengl_lab3/src/main2.cpp > CMakeFiles/opengl_lab3.dir/src/main2.cpp.i
-
-CMakeFiles/opengl_lab3.dir/src/main2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opengl_lab3.dir/src/main2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /tmp/opengl/opengl_lab3/src/main2.cpp -o CMakeFiles/opengl_lab3.dir/src/main2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nik/files/files/Study/opengl_3/openGL_3/main.cpp -o CMakeFiles/opengl_lab3.dir/main.cpp.s
 
 # Object files for target opengl_lab3
 opengl_lab3_OBJECTS = \
 "CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o" \
 "CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o" \
-"CMakeFiles/opengl_lab3.dir/main.cpp.o" \
-"CMakeFiles/opengl_lab3.dir/src/main2.cpp.o"
+"CMakeFiles/opengl_lab3.dir/main.cpp.o"
 
 # External object files for target opengl_lab3
 opengl_lab3_EXTERNAL_OBJECTS =
@@ -142,10 +128,9 @@ opengl_lab3_EXTERNAL_OBJECTS =
 opengl_lab3: CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o
 opengl_lab3: CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o
 opengl_lab3: CMakeFiles/opengl_lab3.dir/main.cpp.o
-opengl_lab3: CMakeFiles/opengl_lab3.dir/src/main2.cpp.o
 opengl_lab3: CMakeFiles/opengl_lab3.dir/build.make
 opengl_lab3: CMakeFiles/opengl_lab3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable opengl_lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable opengl_lab3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opengl_lab3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -158,6 +143,6 @@ CMakeFiles/opengl_lab3.dir/clean:
 .PHONY : CMakeFiles/opengl_lab3.dir/clean
 
 CMakeFiles/opengl_lab3.dir/depend:
-	cd /tmp/opengl/opengl_lab3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/opengl/opengl_lab3 /tmp/opengl/opengl_lab3 /tmp/opengl/opengl_lab3/cmake-build-debug /tmp/opengl/opengl_lab3/cmake-build-debug /tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nik/files/files/Study/opengl_3/openGL_3 /home/nik/files/files/Study/opengl_3/openGL_3 /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/opengl_lab3.dir/depend
 

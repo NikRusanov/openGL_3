@@ -8,4 +8,4 @@
 #
 #meson build
 #ninja -C ./build
-g++ -o opengl main.cpp src/*.cpp -lglut -lGLU -lGL -lglfw
+g++ -o opengl main.cpp src/*.cpp -lglut -lGLU -lGL

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/opengl/opengl_lab3
+CMAKE_SOURCE_DIR = /home/nik/files/files/Study/opengl_3/openGL_3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/opengl/opengl_lab3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /tmp/opengl/opengl_lab3/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/nik/clion-2020.2.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/nik/jetbrains/clion-2020.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles /tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,33 +224,6 @@ src/icosahedron.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_lab3.dir/build.make CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.s
 .PHONY : src/icosahedron.cpp.s
 
-src/main2.o: src/main2.cpp.o
-
-.PHONY : src/main2.o
-
-# target to build an object file
-src/main2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_lab3.dir/build.make CMakeFiles/opengl_lab3.dir/src/main2.cpp.o
-.PHONY : src/main2.cpp.o
-
-src/main2.i: src/main2.cpp.i
-
-.PHONY : src/main2.i
-
-# target to preprocess a source file
-src/main2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_lab3.dir/build.make CMakeFiles/opengl_lab3.dir/src/main2.cpp.i
-.PHONY : src/main2.cpp.i
-
-src/main2.s: src/main2.cpp.s
-
-.PHONY : src/main2.s
-
-# target to generate assembly for a file
-src/main2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_lab3.dir/build.make CMakeFiles/opengl_lab3.dir/src/main2.cpp.s
-.PHONY : src/main2.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -269,9 +242,6 @@ help:
 	@echo "... src/icosahedron.o"
 	@echo "... src/icosahedron.i"
 	@echo "... src/icosahedron.s"
-	@echo "... src/main2.o"
-	@echo "... src/main2.i"
-	@echo "... src/main2.s"
 .PHONY : help
 
 

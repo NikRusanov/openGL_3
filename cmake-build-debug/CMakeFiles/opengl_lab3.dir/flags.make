@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/tmp/opengl/opengl_lab3/. 
+CXX_INCLUDES = -I/home/nik/files/files/Study/opengl_3/openGL_3/. 
 

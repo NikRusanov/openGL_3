@@ -1,3 +1,4 @@
+#include <iostream>
 #include "icosahedron.h"
 
 const GLfloat mat_ambient[] = { 1.7f, 1.7f, 1.7f };
@@ -26,21 +27,23 @@ void Icosahedron::Draw()
         glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, mat_diffuse);
         glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, mat_specular);
         glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, high_shininess);
-        
-        for (int i = 0; i < 20; i++)
+
+        for (int i = 0; i < 8; i++)
         {
+            std::cout << "x[ " << i <<  "] " << points[i].x << std::endl;
+            std::cout << "y[ " << i <<  "] " << points[i].y<< std::endl;
             glBegin(GL_POLYGON);
-                glNormal3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
-                glTexCoord2d(0.5f, 0.0f);
-                glVertex3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
-        
-                glNormal3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
-                glTexCoord2d(1.0f, 0.3f);
-                glVertex3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
-        
-                glNormal3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
-                glTexCoord2d(0.6f, 1.0f);
-                glVertex3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
+            glNormal3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
+            glTexCoord2d(0.5f, 0.0f);
+            glVertex3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
+
+            glNormal3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
+            glTexCoord2d(1.0f, 0.3f);
+            glVertex3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
+
+            glNormal3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
+            glTexCoord2d(0.6f, 1.0f);
+            glVertex3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
             glEnd();
         }
         glDisable(GL_TEXTURE_2D);
@@ -51,17 +54,17 @@ void Icosahedron::Draw()
     {
         glDisable(GL_LIGHTING);
         glColor3f(1.0, 1.0, 1.0);
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 8; i++)
         {
             glBegin(GL_TRIANGLES);
-                glVertex3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
-                glVertex3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
-                glVertex3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
+            glVertex3d(points[faces[i][0]].x, points[faces[i][0]].y, points[faces[i][0]].z);
+            glVertex3d(points[faces[i][1]].x, points[faces[i][1]].y, points[faces[i][1]].z);
+            glVertex3d(points[faces[i][2]].x, points[faces[i][2]].y, points[faces[i][2]].z);
             glEnd();
         }
-    //    glBegin(GL_POINTS);
-    //        glVertex3d(points[5].x, points[5].y, points[5].z);
-    //    glEnd();
+        //    glBegin(GL_POINTS);
+        //        glVertex3d(points[5].x, points[5].y, points[5].z);
+        //    glEnd();
     }
 }
 
@@ -69,12 +72,12 @@ int Icosahedron::get_bottom_point()
 {
     double minZ = points[0].z;
     int bottom_point_idx = 0;
-    for (int i = 1; i < 12; i++)
+    for (int i = 1; i < 8; i++)
     {
         if (points[i].z < minZ)
         {
             bottom_point_idx = i;
-             minZ = points[i].z;
+            minZ = points[i].z;
         }
     }
     return bottom_point_idx;
@@ -85,26 +88,32 @@ void Icosahedron::rolling()
     if (!isRoll) return;
 
     Point3D saved = points[rotation_point].copy();
+//    std::cout << "x=" << saved.x << std::endl;
+//
+//    std::cout << "y=" << saved.y<< std::endl;
     switch (rolling_direction)
     {
+
+
         case N:
+
             Move(points[rotation_point].inverse());
-            Rotate(0.0065f, X);
+            Rotate(0.065f, X);
             Move(saved);
             break;
         case S:
             Move(points[rotation_point].inverse());
-            Rotate(-0.0065f, X);
+            Rotate(-0.065f, X);
             Move(saved);
             break;
         case W:
             Move(points[rotation_point].inverse());
-            Rotate(0.0065f, Y);
+            Rotate(0.065f, Y);
             Move(saved);
             break;
         case E:
             Move(points[rotation_point].inverse());
-            Rotate(-0.0065f, Y);
+            Rotate(-0.065f, Y);
             Move(saved);
             break;
     }
@@ -132,12 +141,14 @@ void Icosahedron::StopRolling()
 
 void Icosahedron::Move(Point3D delta)
 {
-    for (int i = 0; i < 12; i++)
-    {
-        points[i].x += delta.x;
-        points[i].y += delta.y;
-        points[i].z += delta.z;
-    }
+
+        for (int i = 0; i < 8; i++)
+        {
+
+            points[i].x += delta.x;
+            points[i].y += delta.y;
+            points[i].z += delta.z;
+        }
 }
 
 void Icosahedron::Rotate(float angle, Axis axis)
@@ -146,7 +157,7 @@ void Icosahedron::Rotate(float angle, Axis axis)
     float matrix[4][4];
     CreateRotateMatrix(&matrix[0][0], angle, axis);
 
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 8; i++)
     {
         newX = matrix[0][0] * points[i].x + matrix[1][0] * points[i].y + matrix[2][0] * points[i].z + matrix[3][0];
         newY = matrix[0][1] * points[i].x + matrix[1][1] * points[i].y + matrix[2][1] * points[i].z + matrix[3][1];

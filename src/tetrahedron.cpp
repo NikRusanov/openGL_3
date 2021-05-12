@@ -149,6 +149,7 @@ void tetrahedron::rolling() {
             {
                 if (p1x && p2x && p3x && p4x && p5x && p6x && p7x && p8x && p9x && p10x && p11x && p12x && p13x && p14x)
                 {
+
                     Move(points[rotation_point].inverse());
                     k = (points[2].y - points[rotation_point].y) / 95.0f;
                     Rotate(0.005f, X);

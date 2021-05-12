@@ -4,10 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/tmp/opengl/opengl_lab3/main.cpp" "/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/main.cpp.o"
-  "/tmp/opengl/opengl_lab3/src/Utils.cpp" "/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o"
-  "/tmp/opengl/opengl_lab3/src/icosahedron.cpp" "/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o"
-  "/tmp/opengl/opengl_lab3/src/main2.cpp" "/tmp/opengl/opengl_lab3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/src/main2.cpp.o"
+  "/home/nik/files/files/Study/opengl_3/openGL_3/main.cpp" "/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/main.cpp.o"
+  "/home/nik/files/files/Study/opengl_3/openGL_3/src/Utils.cpp" "/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/src/Utils.cpp.o"
+  "/home/nik/files/files/Study/opengl_3/openGL_3/src/icosahedron.cpp" "/home/nik/files/files/Study/opengl_3/openGL_3/cmake-build-debug/CMakeFiles/opengl_lab3.dir/src/icosahedron.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

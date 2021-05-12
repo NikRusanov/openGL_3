@@ -10,8 +10,7 @@ include_directories(.)
 add_executable(${PROJECT_NAME}
         src/icosahedron.cpp
         src/Utils.cpp
-        main.cpp
-        src/main2.cpp)
+        main.cpp )
 target_link_libraries(${PROJECT_NAME}
         -lglut
         -lGLU
