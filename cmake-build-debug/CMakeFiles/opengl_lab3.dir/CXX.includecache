@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/tmp/opengl/opengl_lab3/main.cpp
+GL/glut.h
+-
+src/icosahedron.h
+/tmp/opengl/opengl_lab3/src/icosahedron.h
+string
+-
+
+/tmp/opengl/opengl_lab3/src/Point3D.h
+
+/tmp/opengl/opengl_lab3/src/Utils.h
+Point3D.h
+/tmp/opengl/opengl_lab3/src/Point3D.h
+
+/tmp/opengl/opengl_lab3/src/icosahedron.cpp
+icosahedron.h
+/tmp/opengl/opengl_lab3/src/icosahedron.h
+
+/tmp/opengl/opengl_lab3/src/icosahedron.h
+cmath
+-
+vector
+-
+GL/glut.h
+-
+Point3D.h
+/tmp/opengl/opengl_lab3/src/Point3D.h
+Utils.h
+/tmp/opengl/opengl_lab3/src/Utils.h
+cmath
+-
+
